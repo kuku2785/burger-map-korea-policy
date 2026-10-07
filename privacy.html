@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko">
+<head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="no-referrer" name="referrer"/><title>개인정보처리방침 | Burger Map Korea</title><meta content="Burger Map Korea 개인정보처리방침 — 공개 전 검토용 초안" name="description"/><link href="styles.css" rel="stylesheet"/></head>
+<body><a class="skip" href="#main">본문으로 건너뛰기</a><header><a class="brand" href="index.html">Burger Map Korea</a><nav aria-label="정책 메뉴"><a href="index.html">정책 안내</a><a aria-current="page" href="privacy.html">개인정보처리방침</a><a href="account-deletion.html">계정 삭제</a><a href="community-guidelines.html">커뮤니티 가이드라인</a></nav></header><main id="main" tabindex="-1"><h1>Burger Map Korea 개인정보처리방침</h1>
+<p>시행일: <strong>2026년 10월 7일 — DEPLOY-TIME VALUE: 정책 웹사이트 실제 최초 공개일</strong> · 운영자: <strong>Burger Map Korea</strong> · 개인정보 문의: <strong><a href="mailto:burgermapkorea@gmail.com">burgermapkorea@gmail.com</a></strong></p>
+<blockquote>
+<p>공개 전 검토용 초안입니다. 시행일, 공급자 처리 범위와 보유 기간을 확정하기 전에는 게시하거나 Play Console에 제출하지 않습니다.</p>
+</blockquote>
+<h2>1. 서비스와 선택</h2>
+<p>Burger Map Korea(버거맵 코리아)는 매장 탐색과 리뷰를 제공하는 Android 서비스입니다. 공개 매장은 로그인 없이 탐색할 수 있습니다. 로그인, 리뷰·신고, 위치 및 즐겨찾기는 이용자가 선택합니다. 리뷰 작성에는 로그인과 닉네임이 필요하며 본문은 선택 사항입니다.</p>
+<h2>2. 처리하는 정보와 목적</h2>
+<table>
+<thead>
+<tr>
+<th scope="col">정보</th>
+<th scope="col">이용 목적과 공개 범위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google 계정 식별 정보, 이메일, 인증 토큰</td>
+<td>Google과 Supabase를 통한 로그인 및 계정 유지. Google 응답에 이름·프로필 사진 URL이 포함될 수 있습니다. 이메일과 Google 사진을 공개 리뷰에 표시하지 않습니다.</td>
+</tr>
+<tr>
+<td>이메일 로그인 링크에 입력한 이메일</td>
+<td>인증 링크 발송과 로그인</td>
+</tr>
+<tr>
+<td>사용자 ID, 닉네임, 생성·수정 시각, 이용 제한 상태</td>
+<td>계정 관리, 작성자 표시, 서비스 보호. 공개 리뷰에는 닉네임과 작성자 ID가 포함됩니다.</td>
+</tr>
+<tr>
+<td>매장별 선호도 1~5, 선택적 리뷰 본문, 작성자·매장 관계, 시각</td>
+<td>리뷰 제공 및 본인 리뷰 수정·삭제. 공개 상태 리뷰는 다른 이용자가 볼 수 있습니다.</td>
+</tr>
+<tr>
+<td>신고자·대상 리뷰, 사유·설명, 처리 상태·운영 기록</td>
+<td>신고 검토와 운영 조치. 신고자와 내부 기록은 일반 이용자에게 공개하지 않습니다.</td>
+</tr>
+<tr>
+<td>정확한 또는 대략적인 위치와 정확도</td>
+<td>현재 위치 표시, 거리 계산, 가까운 순 정렬</td>
+</tr>
+<tr>
+<td>즐겨찾기 매장 ID</td>
+<td>기기 안에서 즐겨찾기 유지. 계정 간 서버 동기화는 제공하지 않습니다.</td>
+</tr>
+<tr>
+<td>세션과 인증 응답 사용자 정보</td>
+<td>기기에서 로그인 유지</td>
+</tr>
+</tbody>
+</table>
+<p>검색어·필터·정렬 상태는 앱 메모리에서 처리하며 자체 검색·분석 서버로 전송하지 않습니다. 사진 업로드 기능은 없습니다. 인증 metadata의 실제 제공 항목과 사진 데이터 분류는 공개 전 확인 대상입니다.</p>
+<h2>3. 위치 정보</h2>
+<p>현재 위치 또는 가까운 순을 선택하면 Android 전경 위치 권한을 요청합니다. 대략적인 위치만 허용해도 기능과 정확도 안내를 제공합니다. 거부해도 일반 매장 탐색은 가능합니다. 백그라운드 위치 수집 기능은 제공하지 않습니다.</p>
+<p>좌표는 앱 메모리에서 처리하며 <strong>Supabase로 전송하거나 저장하지 않습니다.</strong> 기기 즐겨찾기 저장소나 앱 자체 로그에도 좌표를 기록하지 않습니다. 배경 전환 시 위치 상태를 무효화하며 Android가 관리하는 최근 위치를 읽을 수 있습니다.</p>
+<p>Google Maps의 현재 위치 표시와 지도 카메라에는 위치 관련 정보가 전달됩니다. SDK가 기기 밖으로 보내거나 보관하는 정확/대략 위치 범위는 <strong>NEEDS VERIFICATION</strong>입니다. 어떠한 외부 서비스에도 위치가 전달되지 않는다고 보장하지 않습니다.</p>
+<p>길찾기 링크에는 매장 목적지를 전달하며 현재 위치를 출발지로 첨부하지 않습니다. 외부 지도 앱의 위치 처리는 해당 서비스 설정과 방침에 따릅니다.</p>
+<h2>4. 외부 서비스와 보호</h2>
+<ul>
+<li><strong>Google 로그인:</strong> 선택한 Google 계정으로 인증합니다. Google 계정 자체는 별개입니다.</li>
+<li><strong>Supabase:</strong> 인증, 계정·리뷰·신고 저장, 매장·메뉴 조회를 처리합니다. 실제 리전, 처리위탁·국외이전 사항, 인증·접속 로그와 백업 보유·삭제 기간은 공개 전 확정합니다.</li>
+<li><strong>Google Maps / Android 위치 서비스:</strong> 지도와 전경 위치 기능을 제공합니다. Maps 공식 안내의 요청·기기 metadata, IP, SDK 식별자, 오류·충돌 및 지도 상호작용 처리를 고려합니다. 공유 분류·보유·삭제 범위는 확인 중입니다.</li>
+<li><strong>메일·브라우저 등 외부 앱:</strong> 이용자가 링크를 선택하거나 문의할 때 해당 서비스가 처리합니다. 문의 메일 제공자와 보유 정책은 공개 전 확정합니다.</li>
+</ul>
+<p>Supabase 통신에는 HTTPS를 사용하고 사용자별 접근 권한을 제한합니다. 로그인 정보와 즐겨찾기는 기기 저장소에 보관합니다. 별도 암호화 저장소를 구현했다고 설명하지 않습니다. Android 백업·기기 이전 범위와 외부 SDK 전체 통신 보호는 <strong>NEEDS VERIFICATION</strong>입니다.</p>
+<h2>5. 보유 및 삭제</h2>
+<table>
+<thead>
+<tr>
+<th scope="col">정보</th>
+<th scope="col">현재 보유·삭제 방식</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>인증 계정, 프로필·닉네임</td>
+<td>계정 유지 중 보관. 본인 계정 삭제 완료 시 삭제</td>
+</tr>
+<tr>
+<td>리뷰·신고와 해당 행의 운영 기록</td>
+<td>본인 리뷰 삭제 또는 계정 삭제에 따라 삭제. 계정 삭제 시 작성한 신고와 본인 리뷰에 연결된 타인의 신고도 삭제. 별도 자동 만료 없음</td>
+</tr>
+<tr>
+<td>기기 로그인 세션</td>
+<td>계정 삭제 성공 후 제거. 재시작 후 게스트 상태 유지</td>
+</tr>
+<tr>
+<td>기기 즐겨찾기</td>
+<td>계정 삭제·로그아웃 후 유지. 직접 해제 또는 앱 데이터 삭제로 제거 가능</td>
+</tr>
+<tr>
+<td>현재 위치</td>
+<td>앱 메모리 처리, 배경 전환 시 무효화. SDK·OS 보유 범위는 별도 확인</td>
+</tr>
+<tr>
+<td>공급자 인증·보안 로그, 백업</td>
+<td>계정 삭제만으로 즉시 전부 지워짐을 보장하지 않음. 공급자 정책·실제 설정에 따르며 NEEDS VERIFICATION</td>
+</tr>
+</tbody>
+</table>
+<p>현재 앱 데이터에 별도의 법정 보존 예외를 추가하지 않았습니다. 보존이 필요한 항목이 확인되면 근거·기간·삭제 방법을 구체적으로 안내하며 포괄적인 무기한 보존 사유로 사용하지 않습니다. 직접 관리하는 문의·계정 삭제 요청 기록은 처리 완료 후 30일 이내 삭제합니다. 관계 법령상 보존 의무가 있거나 실제 분쟁 대응에 필요한 경우에는 해당 목적에 필요한 기간 동안만 보관할 수 있습니다. 이 기준은 Supabase 데이터베이스 전체, 공급자 로그·백업, Google Maps/Sign-In 및 기타 SDK telemetry에는 적용하지 않습니다. 공급자 영역의 보유·삭제는 해당 공급자 정책과 실제 설정에 따르며 확인되지 않은 기간은 NEEDS VERIFICATION으로 유지합니다.</p>
+<h2>6. 계정 삭제와 문의</h2>
+<p>앱 내 self-delete는 최종 확인 후 즉시 처리합니다. 네트워크·서버 오류가 있으면 완료 여부를 별도로 확인해야 합니다. 로그인 후 <strong>지도 화면 상단 계정 영역의 ‘계정 삭제’ → 안내 확인 → ‘계정 삭제’</strong>를 선택합니다. 확인창의 ‘취소’는 삭제하지 않습니다. 완료된 삭제는 복구할 수 없습니다. 로그아웃과 이용 정지는 계정 삭제가 아닙니다.</p>
+<p>앱을 사용할 수 없는 경우를 위한 <a href="account-deletion.html">계정 삭제 안내</a>의 이메일 요청 경로를 준비 중입니다. 문의 주소는 <strong><a href="mailto:burgermapkorea@gmail.com">burgermapkorea@gmail.com</a></strong>입니다. 공개 전 수신 및 운영 절차를 검증합니다. 본인 확인 후 가능한 한 신속히 처리합니다. 내부 운영 목표는 본인 확인 완료 후 7일 이내이며, 확정된 완료 보장 기한이나 데이터 보유 기간을 뜻하지 않습니다. 앱 재설치를 요구하지 않습니다.</p>
+<p>비밀번호, Google 비밀번호, 인증 코드, 로그인 링크, JWT·인증 토큰을 이메일로 보내지 마세요. Google 계정 자체, 다른 이용자의 관련 없는 계정·리뷰 및 공개 매장·메뉴는 삭제 대상이 아닙니다.</p>
+<h2>7. 이용자 권리와 변경</h2>
+<p>개인정보 열람·정정·삭제 및 처리 문의는 <strong><a href="mailto:burgermapkorea@gmail.com">burgermapkorea@gmail.com</a></strong>로 접수하도록 준비합니다. 현재 앱에서 위치 권한 변경, 즐겨찾기 해제, 본인 리뷰 수정·삭제와 계정 삭제가 가능합니다. 문의에는 필요한 최소 정보만 포함해 주세요.</p>
+<p>리뷰 운영 기준은 <a href="community-guidelines.html">커뮤니티 가이드라인</a>을 참고하세요. 정책 변경 시 시행일과 내용을 갱신합니다. 운영자·문의 채널·대응 기간·대상 국가/연령·공급자 처리위탁/국외이전 및 보유 사항을 확정한 뒤 공개합니다.</p></main><footer>공개 전 검토용 · 시행일 2026년 10월 7일 — DEPLOY-TIME VALUE: 실제 최초 공개일<br/>문의 <a href="mailto:burgermapkorea@gmail.com">burgermapkorea@gmail.com</a></footer></body>
+</html>
+
